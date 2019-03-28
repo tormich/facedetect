@@ -32,7 +32,8 @@ RUN cd ~/opencv/opencv && mkdir release && cd release && \
 
 RUN cd ~/opencv/opencv/release && make -j $(nproc) && make install
 
-RUN mkdir ~/app
-RUN cd ~/app
-RUN git clone https://github.com/shantnu/FaceDetect.git
+RUN mkdir /app
+WORKDIR /app
+RUN cd /app
+RUN git clone https://github.com/shantnu/FaceDetect.git .
 RUN ls -lah
