@@ -1,0 +1,4 @@
+requests
+tornado
+git+git://github.com/shantnu/FaceDetect#egg=FaceDetect
+
